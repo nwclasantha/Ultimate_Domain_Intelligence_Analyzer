@@ -99,8 +99,6 @@ The GUI is implemented using `customtkinter`, providing:
 * Dynamic progress bars
 * Matplotlib-based embedded charts
 
-![Figure 2: GUI with Charts and Statistics](attachment\:gui_overview.png)
-
 ### 4.2 HTML Reporting
 
 The HTML report (`advanced_report.html`) is built using Plotly.js, custom CSS, and responsive design principles. It includes:
@@ -109,8 +107,6 @@ The HTML report (`advanced_report.html`) is built using Plotly.js, custom CSS, a
 * Progress visualization
 * Interactive charts (Pie, Bar, Radar)
 * Tabular domain intelligence
-
-![Figure 3: SSL Grade Chart (HTML Report)](attachment\:ssl_grade_chart.png)
 
 ---
 
