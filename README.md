@@ -67,6 +67,8 @@ Each identified (sub)domain undergoes:
 
 The security header compliance scoring follows a weighted system:
 
+<img width="1501" height="666" alt="image" src="https://github.com/user-attachments/assets/f7a74030-4814-4de8-b06f-bf4545447ca6" />
+
 <img width="1661" height="678" alt="image" src="https://github.com/user-attachments/assets/dd1c0254-a675-4c63-81a9-0fb718cf34e1" />
 
 | Header                      | Weight | Purpose               |
@@ -147,4 +149,8 @@ The presented system offers an advanced, extensible, and visually-rich approach 
 4. SeleniumHQ. [https://www.selenium.dev/](https://www.selenium.dev/)
 5. Plotly.js for interactive charts. [https://plotly.com/javascript/](https://plotly.com/javascript/)
 
+**Contact:**
+Please contact me if you require the setup file or further assistance:
 
+* Linkedin: [Chanaka Lasantha Nanayakkara](https://www.linkedin.com/in/chanaka-lasantha-nanayakkara-813357285/)
+* ORCID: [0009-0006-3226-7713](https://orcid.org/0009-0006-3226-7713)
