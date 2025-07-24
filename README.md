@@ -1,5 +1,7 @@
 # **Advanced Automated System for Domain and Subdomain Security Analysis and Reporting**
 
+![Screenshot 2025-07-23 113826](https://github.com/user-attachments/assets/92ceea46-397a-4694-83e9-a03ff543f198)
+
 ## **Abstract**
 
 The exponential growth of cyber threats targeting web infrastructure necessitates robust, scalable, and automated solutions for domain reconnaissance and security assessment. This paper presents the design and implementation of a comprehensive system for domain and subdomain analysis integrating DNS enumeration, SSL/TLS inspection, HTTP header compliance validation, and security intelligence aggregation. Built using Python and supported by a GUI (Tkinter) and executive-level HTML reporting, this tool enables cybersecurity professionals to perform in-depth security assessments and generate visual, shareable reports.
@@ -53,8 +55,6 @@ This module leverages:
 ---
 
 ### 3.3 Domain Analysis
-
-![Screenshot 2025-07-23 113826](https://github.com/user-attachments/assets/92ceea46-397a-4694-83e9-a03ff543f198)
 
 Each identified (sub)domain undergoes:
 
