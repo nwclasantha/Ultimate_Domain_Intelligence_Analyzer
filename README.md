@@ -32,11 +32,13 @@ Tools like **Sublist3r**, **Amass**, and **SSL Labs** provide functionalities fo
 
 The system is composed of three main modules:
 
-* **`subdomain_scanner.py`**: Performs multi-source enumeration.
-* **`advanced_domain_analizer.py`**: Conducts SSL, DNS, HTTP header, and port analysis.
-* **`main.py`**: GUI controller using `customtkinter` for visualization and triggering execution.
+* **`subdomain_scanner`**: Performs multi-source enumeration.
+* **`advanced_domain_analizer`**: Conducts SSL, DNS, HTTP header, and port analysis.
+* <img width="1682" height="447" alt="image" src="https://github.com/user-attachments/assets/f9026640-9ef8-411f-b266-7a28405961c3" />
 
-![Figure 1: System Architecture Flow](attachment\:system_architecture_diagram.png)
+* **`main_app`**: GUI controller using `customtkinter` for visualization and triggering execution.
+
+![Domain Security Analyzer - System Architecture_page-0001](https://github.com/user-attachments/assets/486269b2-74d6-4c6d-97b1-a3870aa3acf1)
 
 ---
 
@@ -48,31 +50,36 @@ This module leverages:
 * **CRT.sh** certificate transparency logs
 * **ThreatCrowd and VirusTotal APIs**
 
-It also includes permutation-based expansion using common naming patterns (e.g., `dev-api`, `test-web`, `prod-db`).
-
-```python
-subdomains = scanner.search_crt_sh()
-subdomains |= scanner.try_zone_transfer()
-```
-
 ---
 
 ### 3.3 Domain Analysis
 
+![Screenshot 2025-07-23 113826](https://github.com/user-attachments/assets/92ceea46-397a-4694-83e9-a03ff543f198)
+
 Each identified (sub)domain undergoes:
 
 * **DNS resolution & record type classification**
+  <img width="1877" height="303" alt="image" src="https://github.com/user-attachments/assets/c8d9058a-49e7-49b4-aff4-07dc12f5dccb" />
+
 * **SSL/TLS certificate inspection**
 * **Port probing** for services (21, 22, 80, 443, 8080, etc.)
 * **Security header evaluation** (e.g., `Strict-Transport-Security`, `Content-Security-Policy`)
 
 The security header compliance scoring follows a weighted system:
 
+<img width="1661" height="678" alt="image" src="https://github.com/user-attachments/assets/dd1c0254-a675-4c63-81a9-0fb718cf34e1" />
+
 | Header                      | Weight | Purpose               |
 | --------------------------- | ------ | --------------------- |
 | `Strict-Transport-Security` | 25     | Enforces HTTPS        |
 | `Content-Security-Policy`   | 25     | Mitigates XSS         |
 | `X-Frame-Options`           | 20     | Prevents clickjacking |
+
+<img width="423" height="740" alt="image" src="https://github.com/user-attachments/assets/f2f36905-38b8-4570-bf77-7687d46d2f4b" />
+
+<img width="426" height="628" alt="image" src="https://github.com/user-attachments/assets/d448165f-20cc-4826-b63c-5eaad0d643ab" />
+
+<img width="402" height="571" alt="image" src="https://github.com/user-attachments/assets/4a52ae58-3a32-47e5-8f2a-292ba4a5906a" />
 
 Optional and deprecated headers are also tracked, and recommendations are provided.
 
@@ -81,6 +88,8 @@ Optional and deprecated headers are also tracked, and recommendations are provid
 ## **4. Implementation**
 
 ### 4.1 GUI Dashboard
+
+<img width="1606" height="527" alt="image" src="https://github.com/user-attachments/assets/496f63bd-89ea-4ce5-8200-06f2fb7b0377" />
 
 The GUI is implemented using `customtkinter`, providing:
 
