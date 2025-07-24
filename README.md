@@ -127,7 +127,6 @@ Example summary:
 | Reachable Domains         | 112   |
 | SSL Enabled               | 98    |
 | Avg SSL Grade             | B     |
-| Cloudflare Bypass Success | 93%   |
 
 ---
 
